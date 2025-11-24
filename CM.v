@@ -28,6 +28,7 @@ module control_module (
     reg [8:0] pixel_read;
     reg [8:0] sel_count;  
     reg [17:0] pixel_write;  // 0–262143
+    wire stall;
 
     // State register
     always @(posedge CLK) begin
@@ -118,7 +119,7 @@ module control_module (
 
                 ENABLE_READ: begin
                     // One cycle to read first 4 pixels (0, 512, 1024, 1536)
-                    e_mem_addr_en <= 1;   // Continue reading from external memory
+                    e_mem_addr_en <= 0;   // Continue reading from external memory
                     w_bram_addr_en <= 0;  // Disable write address counter
                     r_bram_addr_en <= 1;  // Enable read address counter
                     W_A <= 0;             // Disable write
