@@ -15,7 +15,7 @@ module e_mem_addr (
             if (stall && mem_address == 18'd2048)
                 mem_address <= 18'd2048;
             // Wrap condition (your original)
-            else if (mem_address == 18'd262143)
+            else if (mem_address == 18'd262143) 
                 mem_address <= 18'd259072;
 
             // Normal increment

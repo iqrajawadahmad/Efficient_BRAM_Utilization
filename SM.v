@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 `include "package_fpga.v"
 
 module SM(

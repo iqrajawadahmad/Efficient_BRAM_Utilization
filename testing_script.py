@@ -44,7 +44,7 @@ for row in range(0, IMAGE_SIZE - (KERNEL_SIZE - 1)):  # 0 → 508
         expected = [
             image[row + k][col] for k in range(KERNEL_SIZE)
         ]
-
+        
         # actual from file
         actual = nip_pixels[index : index + KERNEL_SIZE]
 

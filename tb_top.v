@@ -1,6 +1,11 @@
 `timescale 1ns / 1ps
-
+`include "package_fpga.v";
 module tb_top;
+
+    // ===========================================
+    // Parameters
+    // ===========================================
+    parameter X = (`K-1)/4;  // must match top module
 
     // ===========================================
     // Clock / Reset / Start
@@ -9,17 +14,28 @@ module tb_top;
     reg rst;
     reg start;
     wire complete;
-    wire [7:0] out1, out2, out3, out4, out5;
 
+    // ===========================================
+    // DUT Outputs (arrays for X instances)
+    // ===========================================
+    wire [7:0] out1 [X-1:0];
+    wire [7:0] out2 [X-1:0];
+    wire [7:0] out3 [X-1:0];
+    wire [7:0] out4 [X-1:0];
+    wire [7:0] out5;  // single external memory output
+
+    // ===========================================
+    // Clock generation (100 MHz)
+    // ===========================================
     initial begin
         CLK = 0;
-        forever #5 CLK = ~CLK;   // 100 MHz clock
+        forever #5 CLK = ~CLK;
     end
 
     // ===========================================
-    // DUT
+    // Instantiate DUT
     // ===========================================
-    top uut (
+    top #(.X(X)) uut (
         .CLK(CLK),
         .rst(rst),
         .start(start),
@@ -28,18 +44,14 @@ module tb_top;
         .out2(out2),
         .out3(out3),
         .out4(out4),
-        .out5(out5)    
+        .out5(out5)
     );
 
     // ===========================================
-    // INTERNAL PROBES
-    // ===========================================
-    wire SM_EN = uut.SM_EN;   // steer module enable
-
-    // ===========================================
-    // FILE LOGGING
+    // File Logging
     // ===========================================
     integer outfile;
+    integer i;
 
     initial begin
         outfile = $fopen("pixel_outputs.txt", "w");
@@ -49,11 +61,14 @@ module tb_top;
         end
     end
 
-    // Write one line per pixel when SM is active
+    // Write all pixels when SM_EN is high
     always @(posedge CLK) begin
-        if (SM_EN) begin
-            // Write pixel set in a single line
-            $fwrite(outfile, "%0h\n%0h\n%0h\n%0h\n%0h\n", out1, out2, out3, out4, out5);
+        if (uut.SM_EN) begin
+            @(posedge CLK); // ensure data is valid
+            for (i = 0; i < X; i = i + 1) begin
+                $fwrite(outfile, "Instance %0d: %0h %0h %0h %0h\n", i, out1[i], out2[i], out3[i], out4[i]);
+            end
+            $fwrite(outfile, "Out5: %0h\n", out5);
         end
     end
 
@@ -63,30 +78,26 @@ module tb_top;
         #20;
         $fclose(outfile);
         $display("Pixel outputs written to pixel_outputs.txt");
+        $stop;
     end
 
     // ===========================================
-    // TEST SEQUENCE
+    // Test sequence
     // ===========================================
     initial begin
         rst = 1;
         start = 0;
         #20;
-        
         rst = 0;
         #10;
-        
         start = 1;
         #10;
         start = 0;
-       
         wait (complete == 1);
-        #20;
-        $stop;
     end
 
     // ===========================================
-    // Waveform Dump
+    // Waveform Dump (for simulation)
     // ===========================================
     initial begin
         $dumpfile("top.vcd");

@@ -8,13 +8,117 @@
 # Compile of r_bram_addr.v was successful.
 # Compile of SM.v was successful.
 # Compile of tb_top.v was successful.
-# Compile of top.v was successful.
+# Compile of top.v failed with 6 errors.
 # Compile of w_bram_addr.v was successful.
+# 12 compiles, 1 failed with 6 errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v failed with 5 errors.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 1 failed with 5 errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 11 compiles, 1 failed with no errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv failed with 1 errors.
+# 12 compiles, 1 failed with 1 error.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv failed with 2 errors.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv was successful.
 # 12 compiles, 0 failed with no errors.
 vsim -gui work.tb_top
 # vsim -gui work.tb_top 
-# Start time: 17:52:49 on Nov 26,2025
+# Start time: 23:44:32 on Nov 26,2025
 # Loading work.tb_top
+# Loading sv_std.std
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire[7:0]' is incompatible with 'wire[7:0]$[0:4]' for  port (out1):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v Line: 22
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire[7:0]' is incompatible with 'wire[7:0]$[0:4]' for  port (out2):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v Line: 22
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire[7:0]' is incompatible with 'wire[7:0]$[0:4]' for  port (out3):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v Line: 22
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire[7:0]' is incompatible with 'wire[7:0]$[0:4]' for  port (out4):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v Line: 22
+# Error loading design
+# End time: 23:44:33 on Nov 26,2025, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 9
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 23:49:14 on Nov 26,2025
+# Loading work.tb_top
+# Loading sv_std.std
 # Loading work.top
 # Loading work.control_module
 # Loading work.AGM
@@ -26,6 +130,112 @@ vsim -gui work.tb_top
 # Loading work.SM
 # Loading work.mux
 run -all
-# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(85)
+# Pixel outputs written to pixel_outputs.txt
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(81)
 #    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 85
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 81
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful with warnings.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# End time: 23:53:50 on Nov 26,2025, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_top 
+# Start time: 23:53:50 on Nov 26,2025
+# Loading work.tb_top
+# Loading sv_std.std
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+run -all
+# Pixel outputs written to pixel_outputs.txt
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(81)
+#    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 81
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful with warnings.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# End time: 23:55:31 on Nov 26,2025, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top 
+# Start time: 23:55:31 on Nov 26,2025
+# Loading work.tb_top
+# Loading sv_std.std
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+run -all
+# Pixel outputs written to pixel_outputs.txt
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(81)
+#    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 81
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful with warnings.
+# Compile of w_bram_addr.v was successful.
+# Compile of top.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# End time: 23:59:06 on Nov 26,2025, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top 
+# Start time: 23:59:06 on Nov 26,2025
+# Loading work.tb_top
+# Loading sv_std.std
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+run -all
+# Pixel outputs written to pixel_outputs.txt
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(81)
+#    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 81

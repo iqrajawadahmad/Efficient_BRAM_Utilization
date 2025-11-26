@@ -4,6 +4,8 @@
 //=====================================================
 `ifndef PACKAGE_FPGA_V
 `define PACKAGE_FPGA_V
+//GENERALIZATION OF INSTANCES
+`define K 5   // Number of BRAM & SM Instances
 
 // BRAM Port A (Write)
 `define DATA_WIDTH_A 8

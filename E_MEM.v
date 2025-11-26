@@ -1,7 +1,7 @@
 `include "package_fpga.v"
 
 module E_MEM (
-    input  wire [17:0] mem_address,  // 18-bit address (0..262143)
+    input  wire [17:0] mem_address,  // 18-bit address (0..262143)//2^18 => 18 ADDRESS lines
     output reg  [7:0] data_out  // 8-bit data
 );
 

@@ -15,7 +15,7 @@ module w_bram_addr(
 
             // Wrap after 2047 ? back to 0
             if (ADDR_A == 11'd2047)
-                ADDR_A <= 11'd0;
+                ADDR_A <= 11'd0; //overwrite
             else
                 ADDR_A <= ADDR_A + 1'b1;
 
