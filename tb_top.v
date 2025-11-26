@@ -53,7 +53,7 @@ module tb_top;
     always @(posedge CLK) begin
         if (SM_EN) begin
             // Write pixel set in a single line
-            $fwrite(outfile, "%0h %0h %0h %0h\n", out1, out2, out3, out4);
+            $fwrite(outfile, "%0h\n%0h\n%0h\n%0h\n%0h\n", out1, out2, out3, out4, out5);
         end
     end
 
