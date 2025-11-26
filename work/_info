@@ -1,0 +1,292 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vAGM
+Z0 !s110 1764150238
+!i10b 1
+!s100 Yg5zDa5k4?EzzZG@EIJ;]3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Il1^M6G^[cX?EzUQYAUhGS3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization
+w1764149588
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/AGM.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/AGM.v
+!i122 85
+L0 25 35
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1764150238.000000
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/AGM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/AGM.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@a@g@m
+vCM
+R0
+!i10b 1
+!s100 U<3@=dMIMF9zCQ?7W9MIC1
+R1
+IS5_DcQ=9a6djJRe18V<RS3
+R2
+R3
+w1764149565
+Z8 8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/CM.v
+Z9 FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/CM.v
+!i122 87
+L0 4 241
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/CM.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/CM.v|
+!i113 1
+R6
+R7
+n@c@m
+vcontrol_module
+!s110 1764149449
+!i10b 1
+!s100 7VWzWC]PLCfJ9k`3>MP<L2
+R1
+IM:edIHlQF9FOmOkY4?N=f0
+R2
+R3
+w1764148261
+R8
+R9
+!i122 65
+L0 3 198
+R4
+r1
+!s85 0
+31
+!s108 1764149449.000000
+R10
+R11
+!i113 1
+R6
+R7
+vE_MEM
+R0
+!i10b 1
+!s100 ]?9zgP]V?EfD47IHQUglM0
+R1
+IKVoDNgREMmINWDANE3RDN2
+R2
+R3
+w1764149655
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v
+!i122 88
+L0 3 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v|
+!i113 1
+R6
+R7
+n@e_@m@e@m
+ve_mem_addr
+Z12 !s110 1764150239
+!i10b 1
+!s100 2Y33a4CG4hR=f07bZbQSV2
+R1
+Ikk=@`]1z2SKzC?34mjmV30
+R2
+R3
+w1764149619
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/e_mem_addr.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/e_mem_addr.v
+!i122 89
+L0 1 27
+R4
+r1
+!s85 0
+31
+Z13 !s108 1764150239.000000
+!s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/e_mem_addr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/e_mem_addr.v|
+!i113 1
+R6
+R7
+vmux
+R12
+!i10b 1
+!s100 ANE]h[_1k:VQ?iDOeGo@f2
+R1
+Im??7aJ:h3gEW@2kbBEbi01
+R2
+R3
+w1764149810
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/mux.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/mux.v
+!i122 90
+L0 23 22
+R4
+r1
+!s85 0
+31
+R13
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/mux.v|
+!i113 1
+R6
+R7
+vr_bram_addr
+R12
+!i10b 1
+!s100 J6R4eOScbdS9PD]g8TAED1
+R1
+I2WKMFFil_hEhadfm:;<^i1
+R2
+R3
+w1764149855
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/r_bram_addr.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/r_bram_addr.v
+!i122 91
+L0 24 19
+R4
+r1
+!s85 0
+31
+R13
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/r_bram_addr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/r_bram_addr.v|
+!i113 1
+R6
+R7
+vSM
+Z14 !s110 1764150240
+!i10b 1
+!s100 ;YlL4;?mJ^XRX21PO>KAK0
+R1
+ITlE1PW;=7hG^JQ=?V[AQ`0
+R2
+R3
+w1764149873
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/SM.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/SM.v
+!i122 92
+L0 4 57
+R4
+r1
+!s85 0
+31
+R13
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/SM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/SM.v|
+!i113 1
+R6
+R7
+n@s@m
+vtb_top
+R14
+!i10b 1
+!s100 <F4PbcE6<?[n@kDal5ZGE0
+R1
+ID]1FS:GYVI8m<_Lef16Z43
+R2
+R3
+w1764150189
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v
+!i122 93
+L0 3 94
+R4
+r1
+!s85 0
+31
+Z15 !s108 1764150240.000000
+!s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v|
+!i113 1
+R6
+R7
+vtop
+R14
+!i10b 1
+!s100 X?fN]WRe6TYR99Z3jco8g1
+R1
+IR7mFR7;jQdK?;HdZlz4722
+R2
+R3
+w1764147975
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v
+!i122 94
+L0 4 113
+R4
+r1
+!s85 0
+31
+R15
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v|
+!i113 1
+R6
+R7
+vtrue_dual_port_BRAM18
+R0
+!i10b 1
+!s100 2m8Gl9]g9UXL@6B5EO`oo2
+R1
+I;<Fn=zXhl^o6kjEbF_DBM3
+R2
+R3
+w1764149891
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/bram_18.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/bram_18.v
+!i122 86
+L0 4 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/bram_18.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/bram_18.v|
+!i113 1
+R6
+R7
+ntrue_dual_port_@b@r@a@m18
+vw_bram_addr
+R14
+!i10b 1
+!s100 IQF<;J[?od:6W5I:Qn`3d2
+R1
+IERBc466F[2Qa]0nBIkW::3
+R2
+R3
+w1764149921
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/w_bram_addr.v
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/w_bram_addr.v
+!i122 95
+L0 3 23
+R4
+r1
+!s85 0
+31
+R15
+!s107 package_fpga.v|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/w_bram_addr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/w_bram_addr.v|
+!i113 1
+R6
+R7

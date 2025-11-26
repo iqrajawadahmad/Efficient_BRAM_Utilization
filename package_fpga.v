@@ -5,24 +5,26 @@
 `ifndef PACKAGE_FPGA_V
 `define PACKAGE_FPGA_V
 
-`define ADDR_WIDTH 11
-
-// Port A (Write)
+// BRAM Port A (Write)
 `define DATA_WIDTH_A 8
 `define DEPTH_A      2048
+`define ADDR_WIDTH_A 11
 
-// Port B (Read)
+// BRAM Port B (Read)
 `define DATA_WIDTH_B 32
 `define DEPTH_B      512
+`define ADDR_WIDTH_B 9
 
 // ROW BUFFER
-`define DATA_WIDTH 8
-`define ROW_LENGTH 512
+`define DATA_WIDTH    8
+`define ROW_LENGTH    512
 
-//select SM
+// Steering Module Select
 `define SELECT 2
-//E_MEM
-`define REG_SIZE 9
-`define MEM_SIZE  262144
+
+// External Memory
+`define REG_SIZE 18
+`define MEM_SIZE 262144  // 512 x 512 pixels
 
 `endif
+ 

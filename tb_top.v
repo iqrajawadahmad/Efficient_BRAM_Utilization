@@ -9,6 +9,7 @@ module tb_top;
     reg rst;
     reg start;
     wire complete;
+    wire [7:0] out1, out2, out3, out4, out5;
 
     initial begin
         CLK = 0;
@@ -22,93 +23,66 @@ module tb_top;
         .CLK(CLK),
         .rst(rst),
         .start(start),
-        .complete(complete)
+        .complete(complete),
+        .out1(out1),
+        .out2(out2),
+        .out3(out3),
+        .out4(out4),
+        .out5(out5)    
     );
 
     // ===========================================
     // INTERNAL PROBES
     // ===========================================
-    wire [2:0]  state        = uut.control_module.state;
-    wire [17:0] pixel_write  = uut.control_module.pixel_write;
-    wire [8:0]  pixel_read   = uut.control_module.pixel_read;
-    wire [1:0]  sel   = uut.control_module.Sel;
-    wire [8:0]  sel_count    = uut.control_module.sel_count;
+    wire SM_EN = uut.SM_EN;   // steer module enable
 
-    wire [17:0] mem_addr     = uut.address_generation.mem_address;
-    wire [10:0] addr_a  = uut.address_generation.ADDR_A;
-    wire [8:0]  addr_b  = uut.address_generation.ADDR_B;
+    // ===========================================
+    // FILE LOGGING
+    // ===========================================
+    integer outfile;
 
-    wire [7:0]  mem_data_out = uut.external_memory.data_out;
-    wire [31:0] bram_dout  = uut.bram_instance.DOUT_B;
+    initial begin
+        outfile = $fopen("pixel_outputs.txt", "w");
+        if (outfile == 0) begin
+            $display("ERROR: Could not open output file!");
+            $stop;
+        end
+    end
 
-    wire [7:0] out1 = uut.steer_module.Out1;
-    wire [7:0] out2 = uut.steer_module.Out2;
-    wire [7:0] out3 = uut.steer_module.Out3;
-    wire [7:0] out4 = uut.steer_module.Out4;
+    // Write one line per pixel when SM is active
+    always @(posedge CLK) begin
+        if (SM_EN) begin
+            // Write pixel set in a single line
+            $fwrite(outfile, "%0h %0h %0h %0h\n", out1, out2, out3, out4);
+        end
+    end
+
+    // Close file at end of operation
+    initial begin
+        wait (complete == 1);
+        #20;
+        $fclose(outfile);
+        $display("Pixel outputs written to pixel_outputs.txt");
+    end
 
     // ===========================================
     // TEST SEQUENCE
     // ===========================================
     initial begin
-        $display("\n======================================");
-        $display("        IMAGE PROCESSOR TESTBENCH");
-        $display("======================================");
-
         rst = 1;
         start = 0;
-        #50;
-
+        #20;
+        
         rst = 0;
-        $display("[TB] Reset released");
-
-        #50;
-
-        $display("[TB] Start pulse");
+        #10;
+        
         start = 1;
         #10;
         start = 0;
-
-        wait(complete == 1);
-
-        $display("\n=========== PROCESS COMPLETED ==========");
-        $display("Final State        = %0d", state);
-        $display("Pixel Write Count  = %0d", pixel_write);
-        $display("Pixel Read Count   = %0d", pixel_read);
-        $display("Final SEL Value    = %0d", sel);
-
-        #100;
-        $finish;
-    end
-
-    // ===========================================
-    // MONITORS
-    // ===========================================
-
-    // BRAM Write Monitor
-    always @(posedge CLK) begin
-        if (uut.control_module.EN_A && uut.control_module.W_A)
-            $display("[WRITE] EXT[%0d] -> BRAM_A[%0d] : %h",
-                     mem_addr, addr_a, mem_data_out);
-    end
-
-    // BRAM Read Monitor
-    always @(posedge CLK) begin
-        if (uut.control_module.EN_B)
-            $display("[READ ] BRAM_B[%0d] -> %h",
-                     addr_b, bram_dout);
-    end
-
-    // STEER Output Monitor
-    always @(posedge CLK) begin
-        if (uut.control_module.SM_EN && state == 3)
-            $display("[STEER] %h %h %h %h",
-                     out1, out2, out3, out4);
-    end
-    wire [39:0] final_data = uut.final_data;
-    
-    always @(posedge CLK) begin
-        if (state == 3)
-            $display("[FINAL OUT] %h", final_data);
+       
+        wait (complete == 1);
+        #20;
+        $stop;
     end
 
     // ===========================================

@@ -1,0 +1,271 @@
+# Compile of AGM.v was successful.
+# Compile of bram_18.v failed with 1 errors.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v failed with 4 errors.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 2 failed with 5 errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v failed with 4 errors.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:05:10 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# ** Error: (vsim-3033) Instantiation of 'CM' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 44
+#         Searched libraries:
+#             C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/work
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+# Error loading design
+# End time: 14:05:10 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 7
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:06:37 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+# ** Error (suppressible): (vsim-3389) Port 'stall' not found in the connected module (13th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/control_module File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 44
+# ** Error (suppressible): (vsim-3389) Port 'stall' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/address_generation File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 63
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'external_memory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (18) for port 'mem_address'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'data_out'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'rst'.
+# ** Error (suppressible): (vsim-3389) Port 'rst' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/bram_instance File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 86
+# ** Error: (vsim-3063) Port 'rst' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/steer_module File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 103
+# Error loading design
+# End time: 14:06:38 on Nov 26,2025, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 7
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:11:22 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+# ** Error (suppressible): (vsim-3389) Port 'stall' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/address_generation File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 63
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'external_memory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (18) for port 'mem_address'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'data_out'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'rst'.
+# ** Error (suppressible): (vsim-3389) Port 'rst' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/bram_instance File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 86
+# ** Error: (vsim-3063) Port 'rst' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/steer_module File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 103
+# Error loading design
+# End time: 14:11:23 on Nov 26,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 7
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:12:44 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'external_memory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (18) for port 'mem_address'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (8) for port 'data_out'. The port definition is at: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/E_MEM.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/external_memory File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 78
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v(78): [TFMPC] - Missing connection for port 'rst'.
+# ** Error (suppressible): (vsim-3389) Port 'rst' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/bram_instance File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 86
+# ** Error: (vsim-3063) Port 'rst' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut/steer_module File: C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/top.v Line: 103
+# Error loading design
+# End time: 14:12:44 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 7
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:39:43 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+add wave -position insertpoint sim:/tb_top/*
+run -all
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(85)
+#    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 85
+quit -sim
+# End time: 14:43:46 on Nov 26,2025, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 3
+# Compile of AGM.v was successful.
+# Compile of bram_18.v was successful.
+# Compile of CM.v was successful.
+# Compile of E_MEM.v was successful.
+# Compile of e_mem_addr.v was successful.
+# Compile of mux.v was successful.
+# Compile of package_fpga.v was successful.
+# Compile of r_bram_addr.v was successful.
+# Compile of SM.v was successful.
+# Compile of tb_top.v was successful.
+# Compile of top.v was successful.
+# Compile of w_bram_addr.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 14:44:14 on Nov 26,2025
+# Loading work.tb_top
+# Loading work.top
+# Loading work.control_module
+# Loading work.AGM
+# Loading work.e_mem_addr
+# Loading work.w_bram_addr
+# Loading work.r_bram_addr
+# Loading work.E_MEM
+# Loading work.true_dual_port_BRAM18
+# Loading work.SM
+# Loading work.mux
+run -all
+# ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(85)
+#    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 85

@@ -5,7 +5,8 @@ module top (
     input  wire CLK,
     input  wire rst,
     input  wire start,
-    output wire complete
+    output wire complete, 
+    output wire [7:0] out1, out2, out3, out4, out5
 );
 
     // ============================
@@ -34,14 +35,13 @@ module top (
     wire [7:0]  mem_data_out;
     wire [31:0] bram_dout;
     wire [7:0]  bram_din_a;
-    wire stall; //MULTIPLEXER SELECT LINE
+    wire stall; 
 
-    wire [7:0] out1, out2, out3, out4;
 
     // ============================
     // Control Module
     // ============================
-    CM control_module (
+    control_module control_module (
         .CLK(CLK),
         .rst(rst),
         .start(start),
@@ -111,9 +111,6 @@ module top (
         .Out4(out4)
         
     );
-    wire [39:0] final_data;
-    
-    assign final_data = {mem_data_out,out4,out3,out2,out1};
-
+    assign out5 = mem_data_out;
 
 endmodule
