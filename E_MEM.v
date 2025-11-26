@@ -8,7 +8,7 @@ module E_MEM (
 );
 
 
-    reg [(`REG_SIZE-1):0] e_mem [0:(`MEM_SIZE-1)];
+    reg [(`REG_SIZE-2):0] e_mem [0:(`MEM_SIZE-1)];
 
     integer i;
 

@@ -11,9 +11,9 @@ pixels = np.array(img.getdata(), dtype=np.uint8)
 print("Image size:", img.size)
 print("Total pixels:", len(pixels))
 
-# Write to .mem file
+# Write to .mem file with uppercase hex
 with open("image_data.mem", "w") as f:
     for p in pixels:
-        f.write(f"{p:02x}\n")
+        f.write(f"{p:02X}\n")   # Uppercase hex
 
 print("✅ Done. Written:", len(pixels), "lines to image_data.mem")

@@ -23,7 +23,7 @@ module true_dual_port_BRAM18 (
     // PORT A 
     always @(posedge CLK_A) begin
         if (EN_A && W_A) begin
-            bram_18[ADDR_A] <= DIN_A[17:0];  
+            bram_18[ADDR_A] <= DIN_A[7:0];  
         end
     end
     
@@ -31,8 +31,8 @@ module true_dual_port_BRAM18 (
     always @(posedge CLK_B) begin
         if (EN_B) begin
   
-            DOUT_B <= {bram_18[ADDR_B + 3*base_address],
-                       bram_18[ADDR_B + 2*base_address], 
+            DOUT_B <= {bram_18[ADDR_B + (3*base_address)],
+                       bram_18[ADDR_B + (2*base_address)], 
                        bram_18[ADDR_B + base_address],
                        bram_18[ADDR_B]};
         end
