@@ -47,7 +47,7 @@ module top #(
     // ============================
     // Control Module
     // ============================
-    control_module control_module (
+    CM control_module (
         .CLK(CLK),
         .rst(rst),
         .start(start),
@@ -77,6 +77,17 @@ module top #(
         .ADDR_B(ADDR_B[0]),
         .stall(stall)
     );
+
+    // ============================================
+    // BROADCAST AGM ADDRESSES TO ALL BRAMs
+    // ============================================
+    genvar j;
+    generate
+        for (j = 0; j < X; j = j + 1) begin : BROADCAST
+            assign ADDR_A[j] = ADDR_A[0];
+            assign ADDR_B[j] = ADDR_B[0];
+        end
+    endgenerate
 
     // ============================
     // Single External Memory

@@ -239,3 +239,5 @@ run -all
 # ** Note: $stop    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v(81)
 #    Time: 2626635 ns  Iteration: 0  Instance: /tb_top
 # Break in Module tb_top at C:/Users/Neha Nauman Khan/OneDrive/Desktop/Uni/Seventh Semester/DSD_CEP/Efficient_BRAM_Utilization/tb_top.v line 81
+# End time: 00:19:32 on Nov 27,2025, Elapsed time: 0:20:26
+# Errors: 0, Warnings: 1
